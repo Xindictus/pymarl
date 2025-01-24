@@ -1,0 +1,79 @@
+[project]
+name = "pymarl"
+version = "0.1.0"
+description = "TODO"
+authors = [
+    {name = "Konstantinos Vytiniotis", email = "konstantinos.vytiniotis@outlook.com"}
+]
+maintainers = [
+    {name = "Konstantinos Vytiniotis", email = "konstantinos.vytiniotis@outlook.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "absl-py>=2.1.0",
+    "atomicwrites>=1.4.1",
+    "attrs>=24.3.0",
+    "certifi>=2024.12.14",
+    "chardet>=5.2.0",
+    "cycler>=0.12.1",
+    "docopt>=0.6.2",
+    "enum34>=1.1.10",
+    "future>=1.0.0",
+    "idna>=3.10",
+    "imageio>=2.37.0",
+    "jsonpickle>=4.0.1",
+    "kiwisolver>=1.4.8",
+    "matplotlib>=3.10.0",
+    "mock>=5.1.0",
+    "more-itertools>=10.6.0",
+    "mpyq>=0.2.5",
+    "munch>=4.0.0",
+    "numpy>=2.2.2",
+    "pathlib2>=2.3.7.post1",
+    "pbr>=6.1.0",
+    "pillow>=11.1.0",
+    "pluggy>=1.5.0",
+    "portpicker>=1.6.0",
+    "probscale>=0.2.5",
+    "protobuf<3.21",
+    "py>=1.11.0",
+    "pygame>=2.6.1",
+    "pyparsing>=3.2.1",
+    "pysc2>=4.0.0",
+    "pytest>=8.3.4",
+    "python-dateutil>=2.9.0.post0",
+    "pyyaml>=6.0.2",
+    "requests>=2.32.3",
+    "s2clientprotocol>=5.0.14.93333.0",
+    "sacred>=0.8.7",
+    "scipy>=1.15.1",
+    "six>=1.17.0",
+    "sk-video>=1.1.10",
+    "smac",
+    "snakeviz>=2.2.2",
+    "tensorboard-logger>=0.1.0",
+    "torch>=2.5.1",
+    "torchvision>=0.20.1",
+    "tornado>=6.4.2",
+    "urllib3>=2.3.0",
+    "websocket-client>=1.8.0",
+    "whichcraft>=0.6.1",
+    "wrapt>=1.17.2",
+]
+
+[tool.black]
+# Match Flake8's default
+line-length = 79
+
+[tool.isort]
+# Match black's default
+profile = "black"
+
+[tool.uv.sources]
+smac = { git = "https://github.com/oxwhirl/smac.git" }
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.0.1",
+]
