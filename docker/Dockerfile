@@ -1,5 +1,6 @@
+# TODO: Adjust in order to use nvidia runtime in the container with 3080
+# FROM nvidia/cuda:12.8.0-cudnn-devel-ubuntu24.04
 FROM nvidia/cuda:12.0.0-cudnn8-devel-ubuntu18.04
-LABEL maintainer="Tabish Rashid"
 
 # CUDA includes
 ENV CUDA_PATH=/usr/local/cuda
